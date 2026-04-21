@@ -68,7 +68,7 @@ export async function generate(prompt) {
     messages: [
       {
         role: "user",
-        content: `Based on the following documents, answer this question: "${question}"\n\nDOCUMENTS:\n\n${context}`,
+        content: `Based on the following documents, answer this question: "${question}"\n\nDOCUMENTS:\n\n${context}. Keep your answer succinct. First answer in plain english, then provide explanation based on context. Do not make up answers. If you can't find an answer say you don't know. `,
       },
     ],
   });
