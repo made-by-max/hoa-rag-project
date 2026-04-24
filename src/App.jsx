@@ -2,6 +2,7 @@ import { useState } from "react";
 import * as React from "react";
 import { Send } from "lucide-react";
 import "./App.css";
+import ChatBox from "./components/chatbox";
 
 function App() {
   const [question, setQuestion] = useState("");
@@ -62,6 +63,7 @@ function App() {
 
   return (
     <>
+      <ChatBox />
       <section id="center">
         <h1 style={{ color: "white" }}>HOA Regulations</h1>
         <div style={responseWindowStyle}>
